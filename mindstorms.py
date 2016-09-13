@@ -15,20 +15,23 @@ def draw_art():
     window = turtle.Screen()
     window.bgcolor("#003236")
 
+    leonardo = turtle.Turtle()
+    leonardo.hideturtle()
+    leonardo.color("#FB6542")
+    leonardo.pensize(1)
+    leonardo.speed(200)
+
     donatello = turtle.Turtle()
     donatello.hideturtle()
     donatello.color("#6FB989")
+    donatello.pensize(2)
     donatello.speed(200)
 
     raphael = turtle.Turtle()
     raphael.hideturtle()
     raphael.color("#66A5AD")
+    raphael.pensize(3)
     raphael.speed(200)
-
-    leonardo = turtle.Turtle()
-    leonardo.hideturtle()
-    leonardo.color("#FB6542")
-    leonardo.speed(200)
 
     for i in range(0, 36):
         draw_square(leonardo, 80)
