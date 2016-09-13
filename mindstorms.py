@@ -3,10 +3,17 @@ import turtle
 
 def draw_square():
     window = turtle.Screen()
-    window.bgcolor("blue")
+    window.bgcolor("white")
 
     donatello = turtle.Turtle()
-    donatello.forward(100)
+
+    donatello.forward(200)
+    donatello.right(90)
+    donatello.forward(200)
+    donatello.right(90)
+    donatello.forward(200)
+    donatello.right(90)
+    donatello.forward(200)
 
     window.exitonclick()
 
