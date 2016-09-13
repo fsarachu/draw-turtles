@@ -1,36 +1,29 @@
 import turtle
 
 
-def draw():
+def draw_square(some_turtle, side_length):
+    for i in range(0, 4):
+        some_turtle.forward(side_length)
+        some_turtle.right(90)
+
+
+def draw_semicircle(some_turtle, radius):
+    some_turtle.circle(radius, 180)
+
+
+def draw_art():
     window = turtle.Screen()
-    window.bgcolor("#50CC99")
 
     # Draw square
     donatello = turtle.Turtle()
-    donatello.shape("turtle")
-    donatello.color("#209C69")
-    donatello.pensize(3)
-    donatello.speed(1.7)
+    draw_square(donatello, 100)
 
-    for i in range(0, 4):
-        donatello.forward(200)
-        donatello.right(90)
-
-    # Draw semicircles
+    # Draw semicircle
     raphael = turtle.Turtle()
-
-    raphael.shape("turtle")
-    raphael.color("#209C69")
-    raphael.pensize(2)
-    raphael.speed(6)
-
     raphael.right(90)
-
-    for i in range(0, 4):
-        raphael.circle(25, 180)
-        raphael.right(180)
+    draw_semicircle(raphael, 50)
 
     window.exitonclick()
 
 
-draw()
+draw_art()
