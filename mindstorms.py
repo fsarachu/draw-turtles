@@ -13,15 +13,30 @@ def draw_semicircle(some_turtle, radius):
 
 def draw_art():
     window = turtle.Screen()
+    window.bgcolor("#003236")
 
-    # Draw square
     donatello = turtle.Turtle()
-    draw_square(donatello, 100)
+    donatello.hideturtle()
+    donatello.color("#6FB989")
+    donatello.speed(200)
 
-    # Draw semicircle
     raphael = turtle.Turtle()
-    raphael.right(90)
-    draw_semicircle(raphael, 50)
+    raphael.hideturtle()
+    raphael.color("#66A5AD")
+    raphael.speed(200)
+
+    leonardo = turtle.Turtle()
+    leonardo.hideturtle()
+    leonardo.color("#FB6542")
+    leonardo.speed(200)
+
+    for i in range(0, 36):
+        draw_square(leonardo, 80)
+        leonardo.right(10)
+        draw_square(donatello, 120)
+        donatello.right(10)
+        draw_square(raphael, 160)
+        raphael.right(10)
 
     window.exitonclick()
 
