@@ -25,19 +25,19 @@ def draw_art():
     leonardo.hideturtle()
     leonardo.color("#333333")
     leonardo.pensize(2)
-    leonardo.speed(200)
+    leonardo.speed(0)
 
     donatello = turtle.Turtle()
     donatello.hideturtle()
     donatello.color("#333333")
     donatello.pensize(2)
-    donatello.speed(200)
+    donatello.speed(0)
 
     raphael = turtle.Turtle()
     raphael.hideturtle()
     raphael.color("#333333")
     raphael.pensize(2)
-    raphael.speed(200)
+    raphael.speed(0)
 
     for i in range(0, 36):
         draw_square(leonardo, 80)
