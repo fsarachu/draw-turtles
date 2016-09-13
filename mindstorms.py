@@ -14,6 +14,15 @@ def draw_square():
     donatello.forward(200)
     donatello.right(90)
     donatello.forward(200)
+    donatello.right(180)
+
+    donatello.circle(25, 180)
+    donatello.right(180)
+    donatello.circle(25, 180)
+    donatello.right(180)
+    donatello.circle(25, 180)
+    donatello.right(180)
+    donatello.circle(25, 180)
 
     window.exitonclick()
 
